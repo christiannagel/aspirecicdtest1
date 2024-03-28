@@ -1,4 +1,5 @@
 var builder = DistributedApplication.CreateBuilder(args);
+builder.AddAzureProvisioning();
 
 var apiService = builder.AddProject<Projects.aspirecicdtest1_ApiService>("apiservice");
 
